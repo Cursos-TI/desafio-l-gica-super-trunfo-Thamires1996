@@ -1,53 +1,44 @@
 # Super Trunfo de Países (Aventureiro)
 
-Programa em C que permite cadastrar cartas de países, comparar atributos e determinar a vencedora conforme regras específicas.
+Programa em C que compara cartas de dois países, considerando atributos reais e dados atualizados para 2025.
 
-## Compilação e Execução
+## 📦 Descrição
 
-**Requisitos:**  
-- Compilador C (GCC, Clang, MinGW, CodeBlocks, DevC++, OnlineGDB etc.)
+- O programa compara Brasil e Argentina em cinco atributos disponíveis.
+- Você escolhe o atributo via menu e vê quem vence na disputa.
+- O menu permite novas comparações sem ter que sair do programa.
 
-**Passo a passo:**
+## 🚀 Compilação e Execução
 
-1. Salve o arquivo do código como `super_trunfo.c`.
-2. Abra o terminal na pasta do arquivo.
-3. Compile com:
+**Pré-requisitos:**  
+- Compilador C (ex: GCC, MinGW, Clang) ou IDE (CodeBlocks, DevC++, VS Code, etc.)
 
-gcc super_trunfo.c -o super_trunfo
+**Passos:**
+1. Salve o código como `super_trunfo_paises.c`
+2. Compile:
+gcc super_trunfo_paises.c -o super_trunfo_paises
 
-ou 
+text
+ou
+clang super_trunfo_paises.c -o super_trunfo_paises
 
-clang super_trunfo.c -o super_trunfo
+text
+3. Execute:
+- Linux/macOS:
+  ```
+  ./super_trunfo_paises
+  ```
+- Windows:
+  ```
+  super_trunfo_paises.exe
+  ```
+Ou use compiladores online ([OnlineGDB](https://www.onlinegdb.com/online_c_compiler), [Replit](https://replit.com/)).
 
+## 📝 Como Usar
 
-4. Execute o programa: ./super_trunfo
+Ao iniciar, o menu será exibido:
 
-
-No Windows, execute com:
-
-super_trunfo.exe
-
-Ou use um compilador online como [OnlineGDB](https://www.onlinegdb.com/online_c_compiler) e cole o código no editor!
-
----
-
-## Como Utilizar
-
-Assim que o programa iniciar:
-
-1. **Cadastro:**  
-Você será solicitado a cadastrar os dados das duas cartas (países):  
-- Nome do país  
-- População (apenas números inteiros)  
-- Área (em km², apenas números positivos)  
-- PIB (em bilhões de dólares)  
-- Número de pontos turísticos (apenas números inteiros positivos)
-
-2. **Menu de Comparação:**  
-Após o cadastro, as informações das duas cartas serão exibidas.  
-Aparecerá o menu abaixo:
-
-=== MENU DE COMPARACAO ===
+=== SUPER TRUNFO DE PAISES ===
 Escolha o atributo para comparar:
 1 - Populacao
 2 - Area
@@ -59,26 +50,45 @@ Digite sua opcao:
 
 text
 
-3. **Exemplo de Uso do Menu:**
-- Digite o número do atributo que deseja comparar.
-- O programa irá exibir os valores das duas cartas para o atributo escolhido e vai informar qual carta venceu.
-- Se quiser comparar outro atributo, basta escolher novamente outra opção após o resultado.
+- **Digite o número desejado** e pressione Enter.
+- Veja a comparação detalhada, o vencedor e continue jogando escolhendo novos atributos.
 - Para encerrar, digite `0`.
 
-4. **Atributos Disponíveis para Comparação:**
-- **1 - População**: vence quem tiver maior população.
-- **2 - Área **: vence quem tiver maior área.
-- **3 - PIB **: vence quem tiver maior PIB.
-- **4 - Pontos Turísticos **: vence quem tiver mais pontos turísticos.
-- **5 - Densidade Demográfica **: vence quem tiver _menor_ densidade (População / Área).
-- **0 - Sair: ** encerra o programa.
+## 🎲 Atributos para Comparação
+
+- **População**: quem tiver mais habitantes vence.
+- **Área**: maior território vence.
+- **PIB**: maior Produto Interno Bruto (em bilhões de dólares) vence.
+- **Pontos Turísticos**: maior quantidade vence.
+- **Densidade Demográfica**: menor densidade vence.
+
+## 📊 Dados Utilizados (2025)
+
+- **Brasil**  
+  População: 213.400.000  
+  Área: 8.515.767 km²  
+  PIB: US$ 2.360 bi  
+  Pontos Turísticos: 60  
+  Densidade: (calculada automaticamente)
+
+- **Argentina**  
+  População: 47.680.000  
+  Área: 2.780.400 km²  
+  PIB: US$ 679 bi  
+  Pontos Turísticos: 34  
+  Densidade: (calculada automaticamente)
+
+## 🛡️ Robustez
+
+- O menu aceita apenas opções entre `0` e `5` e informa caso você digite uma opção inválida.
+- O programa só encerra ao digitar `0`.
+
+## 🧩 Possíveis Expansões
+
+- Permitir cadastro dos países pelo usuário.
+- Suportar mais países e cartas.
+- Adicionar outros indicadores (ex: IDH, expectativa de vida).
 
 ---
 
-## Observações
-
-- O sistema valida as entradas nos cadastros (não aceita valores negativos ou zero).
-- Você pode repetir quantas comparações quiser sem sair do programa.
-- Em caso de empate, o programa mostra a mensagem "Empate!".
-
----
+Este projeto é livre para fins didáticos, acadêmicos e de diversão!
