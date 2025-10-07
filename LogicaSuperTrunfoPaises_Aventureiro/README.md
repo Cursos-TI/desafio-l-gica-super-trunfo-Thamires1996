@@ -69,14 +69,14 @@ text
   Área: 8.515.767 km²  
   PIB: US$ 2.360 bi  
   Pontos Turísticos: 60  
-  Densidade: (calculada automaticamente)
+
 
 - **Argentina**  
   População: 47.680.000  
   Área: 2.780.400 km²  
   PIB: US$ 679 bi  
   Pontos Turísticos: 34  
-  Densidade: (calculada automaticamente)
+
 
 ## 🛡️ Robustez
 
